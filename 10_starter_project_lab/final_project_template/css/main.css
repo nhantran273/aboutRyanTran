@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Wire+One');
+/* ==========================================================================
+   Base styles:
+   ========================================================================== */
+/* Fix to include padding and border in the total width for each element */
+* {
+  box-sizing: border-box;
+}
+
+/* Fix for responsive images */
+img {
+  max-width: 100%;
+  
+}
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: .02em;
+	text-align: center;
+	color: #44545E;
+	-webkit-font-smoothing: antialiased;
+	background-color: #f7f7f9;
+}
+/*----nav bar-----*/
+/*#top-bar {
+	background: #f6f5f3;
+	height: 50px;
+	width: 100%
+	position: fixed;
+	z-index: 9999;
+
+}
+#top-bar .container {
+	position: relative;
+}
+.container {
+	width: 1020px;
+	margin: 0 auto;
+
+}
+#nav-wrapper {
+	margin: 0;
+	padding: 0;
+
+}
+#nav-wrapper .menu {
+	float: left;
+
+}
+ul {
+	list-style: none;
+	display: block;
+	
+}
+
+
+div {
+	display: block;
+}
+#top-social {
+	position: absolute;
+	right: 38px;
+	top: 0;
+}
+#top-social a {
+	color: #888888;
+	margin-left: 12px;
+    
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 50px;
+    display: inline-block;
+    -o-transition: .25s;
+    -ms-transition: .25s;
+    -moz-transition: .25s;
+    -webkit-transition: .25s;
+    transition: .25s;
+}
+*/
+/*---nav bar*/
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+	box-shadow: 0 2px 2px -2px;
+	opacity: 0.5;
+	z-index: 250;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	font-weight: 600;
+	letter-spacing: 0.75px;
+	letter-spacing: .05rem;
+	padding: 3px 60px;
+	padding: .2rem 4rem;
+	display: inline-block;
+	border-bottom: none;
+	text-transform: uppercase;
+}
+
+.hamburger {
+	display: none;
+}
+h1 a,
+h1 a:hover,
+header h2 {
+	color: #fff;
+}
+
+p {
+	font-family: 'wire one', sans-serif;
+	text-transform: none;
+	line-height: 1.4;
+	font-weight: 400;
+}
+h1, {
+	font-weight: 600;
+	font-family: 'Lato';
+	text-transform: uppercase;
+	text-align: center; 
+}
+a {
+	text-decoration: none;
+	color: #7B988A;
+	font-weight: 600;
+
+}
+
+a:hover {
+	color: #44545E;
+	-webkit-transition: color .3s ease-in-out;
+	transition: color .3s ease-in-out;
+}
+header {
+	background-image: url("../img/setup1.jpg");
+	background-position: center;
+ 	background-size: cover;
+ 	height: 700px;
+ 	margin-bottom: 75px;
+ 	padding-top: 275px;
+}
+
+/*---------about me-------------*/
+
+#aboutme {
+	margin: 5px;
+	background-color: #f7f8f1;
+}
+
+#aboutme .row {
+	display: flex;
+}
+#aboutme .aboutme-row {
+	justify-content: center;
+	align-items: flex-end;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+#aboutme .button {
+	font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 25px;
+    position: relative;
+    font-weight: 700;
+    font-size: 13px;
+    color: #333;
+    letter-spacing: 1px;
+    background: transparent;
+    border: 2px solid #333;
+    -webkit-transition: 0.36s;
+    transition: 0.36s;
+}
+
+
+
+
+#aboutme .col-1-2 {
+	width: 70%;
+}
+#aboutme img {
+	padding: 20px;
+
+}
+
+
+
+
+/* my latest project*/
+.main-container {
+	margin: 0;
+    padding: 0;
+    border: 0;
+	background-color: #edece8;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+
+}
+.project-name {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.aboutproject section {
+	display: flex;
+}
+
+.col-1-3 {
+	flex-basis: 32%;
+	height: 300px;
+	width: 150px;
+	overflow: hidden;
+}
+.col-2-3 {
+	flex-basis: 75%;
+
+}
+#aboutproject .main-container {
+	padding: 75px;
+	
+	
+}
+#aboutproject .row {
+	display: flex;
+	flex-wrap: wrap;
+}
+#aboutproject .project-row {
+	text-align: center;
+
+}
+
+#aboutproject .col-1-3 {
+	flex-basis: 33%;
+	width: auto;
+	overflow: visible;
+}
+#aboutproject .col-2-3 {
+	flex-basis: 66%;
+
+}
+
+#aboutproject .project-description-wrapper {
+	text-align: left;
+	/*position: relative;*/
+	left: 120px;
+
+}
+@media screen and (max-width: 1110px) {
+  #aboutproject .col-full {
+    flex-basis: 100%;
+  }
+
+  #aboutproject .project-description-wrapper {
+    text-align: center;
+    position: static; /* undo the 'position: relative' on line 179 on smaller screens */
+  }
+}
+/*this is for gallery*/
+#gallery {
+	margin: 50px;
+
+}
+
+#gallery .row {
+	display: flex;
+}
+#gallery .gallery-row {
+	justify-content: center;
+}
+/* img on top */
+#gallery .gallery-row-top{
+	align-items: flex-end;
+	margin-left: 15%;
+	margin-right: 15%;
+
+}
+#gallery hr {
+	max-width: 85%;
+
+}
+/*img on bottom*/
+#gallery .gallery-row-bottom {
+	align-items: flex-start;
+}
+
+#gallery .col-1-2 {
+	width: 50%;
+}
+#gallery .col-1-3 {
+	width: 33%;
+	height: auto;
+
+}
+ 
+#gallery img {
+	padding: 20px;
+	border-radius: 10px 10px 10px 10px;
+
+}
+/*.project-name {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffff;
+}*/
+section {
+	padding: 105px 30px;
+	padding: 7rem 2rem;
+}
+
+.wrap {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+.grid-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.wrap hr {
+	width: 50%;
+}
+.col-1-3 {
+	width: 33%;
+
+}
+.col-1-8 {
+	width: 12%;
+}
+.callout {
+	background-color: #B6C1C2;
+	color: #f7f8f1;
+}
+
+
+
+

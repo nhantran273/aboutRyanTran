@@ -1,0 +1,131 @@
+/* Combine multiples - BEFORE */
+#buttons-wrapper {
+     padding:10px;
+     border:1px solid black;
+     background:orange;
+}
+#buttons-wrapper form {
+     padding:10px;
+     border:1px solid black;
+}
+
+/* Combine multiples - AFTER */
+#buttons-wrapper,
+#buttons-wrapper form {
+     padding:10px;
+     border:1px solid black;
+}
+#buttons-wrapper {
+     background:orange;
+}
+
+/**************************************************************************/
+
+/* Rename classes and ids - BEFORE */
+#img1 {
+     margin-top: 50px;
+}
+
+/* Rename classes and ids - AFTER */
+#image-to-vote-on {
+     margin-top: 50px;
+}
+/* Ask: Where else do I have to change this? */
+
+
+/**************************************************************************/
+
+/* Organize CSS - BEFORE */
+.list-item {
+     width:200px;
+}
+#container > .col {
+     width:50%;
+}
+footer {
+     text-align: right;
+}
+a:hover {
+     color:purple;
+}
+header > ol {
+     list-style: none;
+}
+body {
+     background-image:url(../images/anImage.png);
+}
+#navigation-wrapper {
+     float:left;
+}
+a {
+     color:red;
+}
+header {
+     height:80px;
+}
+#container > img {
+     border:1px solid red;
+}
+footer > #company-name {
+     font-weight: bold;
+}
+
+
+/* Organize CSS - AFTER */
+
+/* Global */
+a {
+     color:red;
+}
+a:hover {
+     color:purple;
+}
+body {
+     background-image:url(../images/anImage.png);
+}
+
+/* Header */
+header {
+     height:80px;
+}
+header > ol {
+     list-style: none;
+}
+.list-item {
+     width:200px;
+}
+#navigation-wrapper {
+     float:left;
+}
+
+/* Container */
+#container > img {
+     border:1px solid red;
+}
+#container > .col {
+     width:50%;
+}
+
+/*Footer*/
+footer {
+     text-align: right;
+}
+footer > #company-name {
+     font-weight: bold;
+}
+
+
+/**************************************************************************/
+
+/* Remove unnecessary CSS - BEFORE */
+#myDiv {
+     margin:10px 0px 0px 20px;
+}
+div {
+     width:100%;
+}
+
+/* Remove unnecessary CSS - AFTER */
+#myDiv {
+     margin:10px 0 0 20px;
+}
